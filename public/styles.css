@@ -1,0 +1,38 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 0.8fr 5fr;
+}
+
+.sidebar {
+    background-color: cyan;
+    grid-row: 1 / -1;
+}
+
+.header {
+    background-color: cadetblue;
+}
+
+.card{
+    border: 2px solid yellowgreen;
+}
+
+main{
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 4rem 1rem;
+}
+
+#projectsSection{
+    position: absolute;
+    top:0.625rem; /* same as 10px*/
+}
+
+.projectsContainer {
+    display: grid;
+    /* change this to auto-fit, minmax()   */
+    grid-template-columns: repeat(3,1fr);
+}
+
