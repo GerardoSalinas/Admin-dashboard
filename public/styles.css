@@ -22,6 +22,7 @@ main{
     position: relative;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding: 4rem 1rem;
 }
 
@@ -34,5 +35,11 @@ main{
     display: grid;
     /* change this to auto-fit, minmax()   */
     grid-template-columns: repeat(3,1fr);
+    grid-row: 1 / 3;
+}
+
+.trendingContainer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
