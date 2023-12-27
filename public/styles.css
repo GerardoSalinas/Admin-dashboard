@@ -38,12 +38,13 @@ p {
 .dashboardTitle{
     align-items: center;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .middleMenu,
 .lowerMenu{
     display: flex;
+    font-weight: 700;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
