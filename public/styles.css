@@ -31,7 +31,6 @@ p {
 
 .menu div {
     display: flex;
-    /* align-items: center; */
     gap: 15px;
 }
 
@@ -52,7 +51,74 @@ p {
 
 
 .header {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 1rem 0rem;
     background-color: cadetblue;
+    padding: 15px 20px;
+}
+
+.search-container{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+.personalInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.profilePic{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+#smallUserName{
+    font-size: 0.9rem;
+}
+
+.bigProfilePic{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.greetingInfo{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+#hi {
+    font-size: 0.8rem;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.action{
+    background-color: rgb(61, 61, 197);
+    border: none;
+    font-weight: 500;
+    color: #faf5ff;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+#searchBar{
+    background-color: rgb(191, 192, 192);
+    border: 0px solid transparent;
+    border-radius: 1rem;
+    margin-left: 10px;
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    width: 40rem;
 }
 
 .card{
