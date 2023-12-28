@@ -128,9 +128,6 @@ p {
     width: 40rem;
 }
 
-.card{
-    border: 2px solid yellowgreen;
-}
 
 main{
     position: relative;
@@ -150,9 +147,18 @@ main{
 .projectsContainer {
     display: grid;
     /* change this to auto-fit, minmax()   */
-    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(2,1fr); */
+    /* same as minmax(350px,1fr) */
+    /* grid-template-columns: repeat(auto-fit,minmax(21.875rem, 1fr)); */
+    grid-template-columns: repeat(auto-fit,minmax(21.875rem, 1fr));
+    /* grid-template-columns: repeat(auto-fit,clamp(150px,1fr,400px)); */
     gap: 15px;
     grid-row: 1 / 3;
+}
+
+.card{
+    border: 2px solid yellowgreen;
+    border-radius: 0.5rem;
 }
 
 .announcementContainer {
