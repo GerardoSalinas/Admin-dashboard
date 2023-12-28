@@ -158,9 +158,24 @@ main{
 
 .card{
     /* border: 2px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
     background-color: #faf5ff;
     border-left: 8px solid #6b21a8;
     padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+.card p{
+    font-size: 0.9rem;
+}
+
+.iconHolder {
+    position: relative;
+    top: 1.5rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-self: flex-end;
 }
 .card,
 .announcementContainer,
