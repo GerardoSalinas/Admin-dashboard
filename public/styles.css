@@ -125,18 +125,20 @@ p {
     margin-left: 10px;
     padding: 0.3rem 0.8rem;
     outline: none;
-    width: 40rem;
+    /* width: 40rem; */
+    width:100%;
 }
 
 
 main{
     position: relative;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr minmax(300px,1fr);
     grid-template-rows: 1fr 1fr;
     gap: 60px 20px;
     padding: 4rem 1rem;
     background-color: var(--searchbar-color);
+    box-shadow: 0px 5px 10px 0px #a6a2aa inset;
 }
 
 #projectsSection{
@@ -170,8 +172,9 @@ main{
 }
 
 .iconHolder {
-    position: relative;
-    top: 1.5rem;
+    /* position: relative;
+    top: 1.5rem; */
+    margin-top: 1.5rem;
     display: flex;
     width: 50%;
     justify-content: space-evenly;
@@ -209,3 +212,33 @@ main{
     /* same as 3.125rem */
     top: -50px;
 }
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    /* white-space: nowrap;
+    overflow: hidden; */
+    text-overflow: ellipsis;
+}
+
+.announcement {
+    border-bottom: 1px solid #a6a2aa;
+    padding-bottom: 0.8rem;
+}
+
+.announcementTitle{
+    font-size: 0.9em;
+    margin: 5px 0px;
+}
+
+.announcement p{
+    font-size: 0.8em;
+}
+/* 
+.announcements p,
+.trending p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
