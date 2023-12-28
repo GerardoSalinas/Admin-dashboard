@@ -1,3 +1,9 @@
+:root{
+    --sidebar-color: #a855f7;
+    --searchbar-color: #f3e8ff;
+    --mainbackground-color: #6b21a8;
+}
+
 body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -16,7 +22,6 @@ p {
 }
 
 .sidebar {
-    --sidebar-color: #a855f7;
     padding: 5px 30px;
     background-color: var(--sidebar-color);
     color: #faf5ff;
@@ -54,7 +59,7 @@ p {
     display: grid;
     grid-template-columns: 4fr 2fr;
     gap: 1rem 0rem;
-    background-color: cadetblue;
+    background-color: #d8b4fe;
     padding: 15px 20px;
 }
 
@@ -103,7 +108,7 @@ p {
 }
 
 .action{
-    background-color: rgb(61, 61, 197);
+    background-color: var(--sidebar-color);
     border: none;
     font-weight: 500;
     color: #faf5ff;
@@ -112,8 +117,10 @@ p {
 }
 
 #searchBar{
-    background-color: rgb(191, 192, 192);
+    /* background-color: rgb(191, 192, 192); */
+    background-color: var(--searchbar-color);
     border: 0px solid transparent;
+    font-weight: 500;
     border-radius: 1rem;
     margin-left: 10px;
     padding: 0.3rem 0.8rem;
@@ -132,6 +139,7 @@ main{
     grid-template-rows: 1fr 1fr;
     gap: 40px 20px;
     padding: 4rem 1rem;
+    background-color: var(--searchbar-color);
 }
 
 #projectsSection{
