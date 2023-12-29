@@ -170,6 +170,16 @@ main{
     background-color: #faf5ff;
     border-left: 8px solid #6b21a8;
     padding: 0.8rem 1rem 0.8rem 1rem;
+    transition: border 0.3s ease;
+    transition: background 0.4s ease;
+}
+
+.card:hover {
+    background-image: linear-gradient(#faf5ff,#e8cbff);
+    /* background: #e9d4ff; */
+    border-color: #faf5ff;
+    box-shadow: 2px 5px 20px 2px #a6a2aa;
+
 }
 
 .card p{
@@ -266,3 +276,5 @@ main{
     font-size: 0.8rem;
     color: #625f64;
 }
+
+
