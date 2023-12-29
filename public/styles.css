@@ -177,6 +177,7 @@ main{
 .card:hover {
     background-image: linear-gradient(#faf5ff,#e8cbff);
     /* background: #e9d4ff; */
+    cursor: pointer;
     border-color: #faf5ff;
     box-shadow: 2px 5px 20px 2px #a6a2aa;
 
@@ -270,6 +271,13 @@ main{
     font-size: 0.9rem;
     align-items: center;
     gap: 0.8rem;
+}
+
+.trendInfo:hover,
+button:hover,
+svg:hover,
+img:hover {
+    cursor: pointer;
 }
 
 .trendInfo span{
