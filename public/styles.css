@@ -271,13 +271,24 @@ main{
     font-size: 0.9rem;
     align-items: center;
     gap: 0.8rem;
+    border-radius: 1.5rem;
+    transition: background 0.3s ease-out;
 }
 
 .trendInfo:hover,
 button:hover,
 svg:hover,
-img:hover {
+img:hover,
+.announcement:hover {
     cursor: pointer;
+}
+
+input:hover {
+    box-shadow: 2px 5px 20px 2px #a6a2aa;
+}
+
+.trendInfo:hover {
+    background: #d8b4fe;
 }
 
 .trendInfo span{
