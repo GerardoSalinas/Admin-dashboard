@@ -4,4 +4,4 @@ Sidebar and header icons from <a href="https://pictogrammers.com/library/mdi/">M
 
 <a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons">Pokemon icons created by Darius Dan - Flaticon</a>
 <hr>  
-![result](public/assets/dashboard.png)
+<img src="./public/assets/dashboard.png">
